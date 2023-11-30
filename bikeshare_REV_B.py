@@ -89,14 +89,15 @@ def time_stats(df):
     print('\nCalculating The Most Frequent Times of Travel...\n')
     start_time = time.time()
 
-    # Display the most common month.
-    # This section gathers the mode (most common) month traveled numerically and prints. A key is provided to correlate numbers to months.
-    common_month = df['month'].mode()[0]
-    print('\nThe most common month is:', common_month,'\n 1 is jan, 2 is feb,...,6 is june')
-    # Display the most common day of week.
-    # This section gathers the mode (most common) day traveled and prints.
-    common_week = df['day'].mode()[0]
-    print('\nThe most common day is:', common_week)
+    # Display the median month.
+    # This section gathers the median (middle) month traveled numerically and prints. A key is provided to correlate numbers to months.
+    # Revised from mode to median.
+    median_month = df['month'].median()[0]
+    print('\nThe median month is:', median_month,'\n 1 is jan, 2 is feb,...,6 is june')
+    # Display the median day of week.
+    # This section gathers the median (middle) day traveled and prints.
+    median_week = df['day'].median()[0]
+    print('\nThe median day is:', median_week)
     # Display the most common start hour.
     # This section gathers the mode (most common) hour traveled and prints.
     common_hour=df['hour'].mode()[0]
