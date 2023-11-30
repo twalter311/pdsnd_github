@@ -21,3 +21,5 @@ Updated per comments regarding syntax
 Revised from mode to median in terms of working day/month
 
 Updated to remove hours display
+
+Updated to display 10 lines at a time rather than 5.

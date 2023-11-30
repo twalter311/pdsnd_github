@@ -180,12 +180,13 @@ def user_stats(df):
     print('-'*40)
 
 # Viewing raw data.
+# Updated to display 10 lines at a time rather than 5.
     view_data='yes'
     view_data = input('Would you like to view 5 rows of individual trip data? Enter yes or no?')
     start_loc = 0
     while view_data != 'no':
-        print(df.iloc[start_loc:start_loc+5])
-        start_loc += 5
+        print(df.iloc[start_loc:start_loc+10])
+        start_loc += 10
         view_data = input('Do you wish to see the next 5 rows?: ').lower()
 
 def main():
