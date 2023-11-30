@@ -27,3 +27,5 @@ Added note to beginning of code to simulate changes
 Updated note in 'except:' portion from original (from "Uh oh" to "oh bother")
 
 Updated print statement for trip duration
+
+Updated input statement from 'Would you like to restart? Enter yes or no.' to 'Please let me know if uou would like to restart. Enter yes or no'.
