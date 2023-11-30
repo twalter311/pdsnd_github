@@ -8,6 +8,8 @@ CITY_DATA = { 'chicago': 'chicago.csv',
 MONTH_VAL = ['january', 'february', 'march', 'april', 'may', 'june', 'all']
 day_data = ['monday','tuesday','wednesday','thursday','friday','saturday','sunday','all']
 
+# Adding this line as if I am making changes to the code for section 2 of the worksheet
+
 def get_filters():
     """
     Asks user to specify a city, month, and day to analyze.
@@ -132,8 +134,8 @@ def station_stats(df):
 
 def trip_duration_stats(df):
     """Displays statistics on the total and average trip duration."""
-
-    print('\nCalculating Trip Duration...\n')
+    # Updated print below from 'trip duration' to 'duration of trip'.
+    print('\nCalculating Duration of Trip...\n')
     start_time = time.time()
     total_seconds = df['Trip Duration'].sum()
     average_seconds = total_seconds/len(df)
@@ -161,21 +163,23 @@ def user_stats(df):
 
     # Display counts of gender.
     # A try/except is utilized to print gender breakdowns, where applicable. Some instances do not have data available, which is where the         except portion ensures the program completes.
+    # Updated note in 'except:' portion from original.
     try:
         gender=df['Gender'].value_counts()
         print('\nUser genders are broken out as follows\n',gender)
     except:
-        print('\nUh oh, an error was encountered...it appears there is no gender data available')
+        print('\nOh bother, an error was encountered...it appears there is no gender data available')
         
     # Display earliest, most recent, and most common year of birth.
     # A try/except is utilized to print birth year breakdowns, where applicable. Some instances do not have data available, which is where         the except portion ensures the program completes.
+    # Updated note in 'except:' portion from original.
     try:
         newest=int(df['Birth Year'].min())
         oldest=int(df['Birth Year'].max())
         popular=int(df['Birth Year'].mode()[0])
         print('\nThe earilest birth year is',newest, '\nThe latest birth year is',oldest,'\nThe most popular birth year is',popular)
     except:
-        print('\nUh oh, an error was encountered...it appears there is no birth year data available')
+        print('\nOh bother, an error was encountered...it appears there is no birth year data available')
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
 
@@ -198,8 +202,8 @@ def main():
         station_stats(df)
         trip_duration_stats(df)
         user_stats(df)
-
-        restart = input('\nWould you like to restart? Enter yes or no.\n')
+        # Updated input statement from 'Would you like to restart? Enter yes or no.' to 'Please let me know if uou would like to restart. Enter yes or no'.
+        restart = input('\nPlease let me know if uou would like to restart. Enter yes or no.\n')
         if restart.lower() != 'yes':
             break
 
