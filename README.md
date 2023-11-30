@@ -2,16 +2,19 @@
 
 ### Date created
 Include the date you created this project and README file.
+# This project was created 11/30 along with the README file.
 
-### Project Title
+### Bikeshare Github
 Replace the Project Title
 
 ### Description
 Describe what your project is about and what it does
+# This project, simply put, is a series of minor updates tracked in a repository that serves as version control for coding.
 
 ### Files used
 Include the files used
 
 ### Credits
 It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
+# Stack overflow, petri, git-scm, and github were used for inspiration and general guidance. 
 
