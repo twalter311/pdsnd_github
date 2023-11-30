@@ -25,3 +25,5 @@ Visited github, freecodecamp, and noble desktop to assist in creating branch
 Added note to beginning of code to simulate changes
 
 Updated note in 'except:' portion from original (from "Uh oh" to "oh bother")
+
+Updated print statement for trip duration
