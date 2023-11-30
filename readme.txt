@@ -18,4 +18,8 @@ REV B:
 
 Updated per comments regarding syntax
 
+**Updating the file for staging and commitment**
+
+Visited github, freecodecamp, and noble desktop to assist in creating branch
+
 
