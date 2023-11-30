@@ -161,21 +161,23 @@ def user_stats(df):
 
     # Display counts of gender.
     # A try/except is utilized to print gender breakdowns, where applicable. Some instances do not have data available, which is where the         except portion ensures the program completes.
+    # Updated note in 'except:' portion from original.
     try:
         gender=df['Gender'].value_counts()
         print('\nUser genders are broken out as follows\n',gender)
     except:
-        print('\nUh oh, an error was encountered...it appears there is no gender data available')
+        print('\nOh bother, an error was encountered...it appears there is no gender data available')
         
     # Display earliest, most recent, and most common year of birth.
     # A try/except is utilized to print birth year breakdowns, where applicable. Some instances do not have data available, which is where         the except portion ensures the program completes.
+    # Updated note in 'except:' portion from original.
     try:
         newest=int(df['Birth Year'].min())
         oldest=int(df['Birth Year'].max())
         popular=int(df['Birth Year'].mode()[0])
         print('\nThe earilest birth year is',newest, '\nThe latest birth year is',oldest,'\nThe most popular birth year is',popular)
     except:
-        print('\nUh oh, an error was encountered...it appears there is no birth year data available')
+        print('\nOh bother, an error was encountered...it appears there is no birth year data available')
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
 
