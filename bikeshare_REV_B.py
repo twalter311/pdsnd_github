@@ -8,6 +8,8 @@ CITY_DATA = { 'chicago': 'chicago.csv',
 MONTH_VAL = ['january', 'february', 'march', 'april', 'may', 'june', 'all']
 day_data = ['monday','tuesday','wednesday','thursday','friday','saturday','sunday','all']
 
+# Adding this line as if I am making changes to the code for section 2 of the worksheet
+
 def get_filters():
     """
     Asks user to specify a city, month, and day to analyze.

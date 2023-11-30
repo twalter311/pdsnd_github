@@ -22,4 +22,6 @@ Updated per comments regarding syntax
 
 Visited github, freecodecamp, and noble desktop to assist in creating branch
 
+Added note to beginning of code to simulate changes
+
 
