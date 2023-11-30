@@ -138,11 +138,12 @@ def trip_duration_stats(df):
     total_seconds = df['Trip Duration'].sum()
     average_seconds = total_seconds/len(df)
     # Display total travel time.
+    # Updated to remove hours display.
     # This section breaks down total travel time in two intervals. First is hours (roughly) and then it is broken out in minutes and seconds for additional detail.
-    print('\nThe overall travel time is {} hours OR {} minutes and {} seconds'.format(int(total_seconds/3600),int(total_seconds/60), int(total_seconds%60)))
+    print('\nThe overall travel time is {} minutes and {} seconds'.format(int(total_seconds/60), int(total_seconds%60)))
     # Display mean travel time.
     # This section breaks down total travel time in two intervals. First is hours (roughly) and then it is broken out in minutes and seconds       for additional detail.
-    print('\nThe average travel time is {} hours OR {} minutes and {} seconds'.format(int(average_seconds/3600),int(average_seconds/60), int(average_seconds%60)))
+    print('\nThe average travel time is {} minutes and {} seconds'.format(int(average_seconds/60), int(average_seconds%60)))
 
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)

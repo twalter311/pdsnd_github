@@ -19,3 +19,5 @@ REV B:
 Updated per comments regarding syntax
 
 Revised from mode to median in terms of working day/month
+
+Updated to remove hours display
